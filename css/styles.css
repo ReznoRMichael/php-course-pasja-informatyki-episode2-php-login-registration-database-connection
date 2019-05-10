@@ -1,0 +1,280 @@
+body
+{
+	background-color: #000000;
+	background-image: url("../img/concrete_wall.png"); /* background image from Toptal Subtle Patterns */
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #FFF;
+	margin: 0 !important;
+}
+a:link
+{
+	color: #006a9b;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #006a9b;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #006a9b;
+	text-decoration: none;
+}
+a:visited:hover
+{
+	color: #006a9b;
+	text-decoration: none;
+}
+.horizontal-rule
+{
+	border-top: 1px dotted gray;
+	margin-bottom: 4px;
+	margin-top: 11px;
+}
+.error
+{
+	color: #dd0000;
+	margin: 0 10px;
+}
+input[type=submit]
+{
+	background-color: #006a9b;
+	border: none;
+	color: white;
+	padding: 6px 12px;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 10px 2px;
+	outline: none;
+	cursor: pointer;
+}
+input[type=submit]:hover
+{
+	background-color: #006a9b;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+button
+{
+	background-color: #006a9b;
+	border: none;
+	color: white;
+	padding: 6px 12px;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 10px 2px;
+	outline: none;
+	cursor: pointer;
+}
+button:hover
+{
+	background-color: #006a9b;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+button:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+input[type=text],
+input[type=password]
+{
+	background-color: #110000;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #6ed1ff;
+	width: 130px;
+	text-align: center;
+	border: 2px solid #00415f;
+	padding: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	outline: none;
+}
+input[type=text]:focus,
+input[type=password]:focus
+{
+	background-color: #110000;
+	font-size: 15px;
+	color: #006a9b;
+	border: 2px solid #0090d3;
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 2px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 2px rgba(0, 174, 255, 0.4);
+}
+input::-webkit-input-placeholder
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+    color: #006a9b;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #00415f;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+    color: #006a9b;
+}
+input:focus:-moz-placeholder
+{
+    color: #00415f;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+    color: #006a9b;
+}
+input:focus::-moz-placeholder
+{
+    color: #00415f;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+    color: #006a9b;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #00415f;
+}
+.button
+{
+	background-color: #006a9b;
+	border: none;
+	color: white;
+	padding: 6px 12px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 18px 0;
+	outline: none;
+}
+#form_logout_right .button
+{
+	margin: 12px 0;
+}
+.button:focus
+{
+	outline: none;
+}
+.button:hover
+{
+	background-color: #006a9b;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+a.tilelinkhtml5
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+a.tilelinkhtml5:focus
+{
+	outline: none;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+	box-shadow: 0px 0px 15px 0px rgba(0, 174, 255, 0.4);
+}
+#container
+{
+	position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+#secretbutton
+{
+	color: #006a9b;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	height: 30px;
+	margin-top: -15px; /* half of height */
+	width: 144px;
+	margin-left: -72px; /* half of width */
+	opacity: 0.1;
+}
+#form_login
+{
+	color: #FFF;
+	text-align: center;
+	background-color: transparent;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 250px;
+	margin-top: -125px; /* half of height */
+	width: 144px;
+	margin-left: -72px; /* half of width */
+	opacity: 1;
+}
+#form_register
+{
+	color: #FFF;
+	text-align: center;
+	background-color: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 650px;
+	margin-top: -400px; /* half of height */
+	width: 310px;
+	margin-left: -155px; /* half of width */
+	opacity: 1;
+}
+#form_welcome
+{
+	color: #FFF;
+	text-align: center;
+	background-color: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	margin-top: -100px; /* half of height */
+	width: 260px;
+	margin-left: -130px; /* half of width */
+	opacity: 1;
+}
+#form_logout
+{
+	position:relative;
+	width: 80%;
+	z-index:250;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FFF;
+	padding: 30px 10px;
+	margin-top: 5px;
+	text-align: center;
+	opacity: 1;
+}

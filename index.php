@@ -2,9 +2,10 @@
 
 session_start();
 
-if (isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany']==true))
+if (isset($_SESSION['login'])) unset($_SESSION['login']);
+if (isset($_SESSION['loggedin']) && ($_SESSION['loggedin']==true))
 {
-	header('Location: gra.php');
+	header('Location: game.php');
 	exit(); // opuszczamy plik, natychmiastowe otwarcie przekierowania bez straty mocy obliczeniowej na dalsze wykonanie pliku
 }
 
@@ -12,37 +13,31 @@ if (isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany']==true))
 
 <!DOCTYPE HTML>
 <html lang="pl">
+
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>Settlers - web game</title>
+	<title>Settlers - Game</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="css/styles.css" type="text/css" rel="stylesheet">
+	
 </head>
 
 <body>
+<div id="container"></div>
+		<div id="form_login">
+			<p>Settlers - Game</p>
+			<a href="register.php" class="tilelinkhtml5"><div class="button">Register</div></a>
+			<form action="login.php" method="post">
 
-Only the dead have seen the end of war - Plato <br/><br/>
-
-<a href="rejestracja.php">Register - create a free account!</a><br/><br/>
-
-<form action="zaloguj.php" method="post">
-
-Login: <br/> <input type="text" name="login"/> <br/>
-
-Password: <br/> <input type="password" name="haslo"/> <br/> <br/>
-
-<input type="submit" value="Log in"/>
-
-</form>
-
-<?php
-
-if (isset($_SESSION['blad']))
-{
-	echo $_SESSION['blad'];
-	session_unset();
-}
-
-?>
+			<input type="text" name="login" placeholder="Login"> <br>
+			<input type="password" name="password" placeholder="Password"> <br>
+			<button>Enter</button>
+			
+			</form>
+			
+			<?php if (isset($_SESSION['error'])) {echo $_SESSION['error']; session_unset();} ?>
+		</div>
 
 </body>
 
