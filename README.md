@@ -7,13 +7,6 @@
 Learning PHP, back-end and working with databases.
 Login page. Registration of new users. Validation of password. Password hashing. Terms and Conditions check. Google reCAPTCHA. SQL injection security - code sanitization. E-mail validation. Password length and login length check. Database connection. Inserting new registered users into database. Checking if user already exists. Exception handling. Reading values from database and displaying in HTML. Date and time handling, checking and validation. Associative arrays. Page redirection. Logging in users. Remembering Sessions between pages. Logging out (unsetting session).
 
-## Screenshots
-
-![example](screen1.png)
-![example](screen2.png)
-![example](screen3.png)
-![example](screen4.png)
-
 ## Technologies
 
 * HTML5
@@ -25,6 +18,13 @@ Login page. Registration of new users. Validation of password. Password hashing.
 * Google reCaptcha
 * Notepad++
 * Microsoft Visual Studio Code
+
+## Screenshots
+
+![example](screen1.png)
+![example](screen2.png)
+![example](screen3.png)
+![example](screen4.png)
 
 ## Contact
 
