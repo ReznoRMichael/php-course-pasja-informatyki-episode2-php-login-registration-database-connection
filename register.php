@@ -78,7 +78,7 @@ if (isset($_POST['login']))
 	if (isset($_POST['regulamin'])) $_SESSION['fr_regulamin'] = true;
 	
 	
-	require_once "connect.php"; // łączenie z bazą danych SQL
+	require_once "connect-reznor.php"; // łączenie z bazą danych SQL
 	mysqli_report(MYSQLI_REPORT_STRICT); // zamiast warning rzuć wyjątkiem
 
 	try // nowy sposób łapania błędów w PHP
@@ -91,7 +91,7 @@ if (isset($_POST['login']))
 		else
 		{
 			// check = czy email istnieje w bazie
-			$rezultat = $polaczenie->query("SELECT id FROM uzytkownicy WHERE email='$email'");
+			$rezultat = $polaczenie->query("SELECT id FROM reznor_settlers_users WHERE email='$email'");
 			if (!$rezultat) throw new Exception($polaczenie->error); // jak cos poszlo nie tak, rzuc wyjatkiem
 			
 			$ile_maili = $rezultat->num_rows; // ile bylo takich maili w bazie
@@ -101,7 +101,7 @@ if (isset($_POST['login']))
 				$_SESSION['e_email']="There already exists an account using this e-mail.";
 			}
 			// check = czy login istnieje w bazie
-			$rezultat = $polaczenie->query("SELECT id FROM users WHERE login='$login'");
+			$rezultat = $polaczenie->query("SELECT id FROM reznor_settlers_users WHERE login='$login'");
 			if (!$rezultat) throw new Exception($polaczenie->error); // jak cos poszlo nie tak, rzuc wyjatkiem
 			
 			$ile_loginow = $rezultat->num_rows; // ile bylo takich maili w bazie
@@ -117,7 +117,7 @@ if (isset($_POST['login']))
 				// dodajemy gracza do bazy danych
 				//echo "Udana walidacja!"; exit();
 				if ($polaczenie->query(
-					"INSERT INTO users VALUES (NULL, '$login', '$pass_hash', '$email', 100, 100, 100, now() + INTERVAL 14 DAY )")) // curdate(), curtime()
+					"INSERT INTO reznor_settlers_users VALUES (NULL, '$login', '$pass_hash', '$email', 100, 100, 100, now() + INTERVAL 14 DAY )")) // curdate(), curtime()
 				{
 					$_SESSION['udanarejestracja']=true;
 					$_SESSION['login'] = $login;
@@ -141,15 +141,15 @@ if (isset($_POST['login']))
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pl">
+<html lang="en">
 <head>
 	<title>Settlers - Game</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -177,7 +177,7 @@ if (isset($_POST['login']))
 	</label>
 	
 	<br><br>
-	<div class="g-recaptcha" data-sitekey="6Ld2PYoUAAAAAMWTKzQXMyWPg-rATi-rh0skddBR"></div><br>
+	<div class="g-recaptcha" data-sitekey="6Lc4UKUUAAAAADdrV0fml7TbDEn7DS_Ta359-txn"></div><br>
 
 	<button>Yes, I want to register!</button>
 </form>

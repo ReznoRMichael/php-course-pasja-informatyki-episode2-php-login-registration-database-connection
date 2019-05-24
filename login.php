@@ -8,7 +8,7 @@ if ( (!isset($_POST['login'])) || (!isset($_POST['password'])) )
 	exit();
 }
 
-require_once "connect.php";
+require_once "connect-reznor.php";
 
 mysqli_report(MYSQLI_REPORT_STRICT); // zamiast warning rzuć wyjątkiem
 
@@ -28,8 +28,9 @@ try // nowy sposób łapania błędów w PHP
 		//$password = htmlentities($_POST['password'], ENT_QUOTES, "UTF-8");
 		
 		$rezultat = $polaczenie->query(
-		sprintf("SELECT * FROM users WHERE login='%s'",
-		mysqli_real_escape_string($polaczenie,$login)));
+			sprintf("SELECT * FROM reznor_settlers_users WHERE login='%s'",
+			mysqli_real_escape_string($polaczenie,$login))
+		);
 		
 		if (!$rezultat) throw new Exception($polaczenie->error);
 		else

@@ -12,12 +12,13 @@ if (isset($_SESSION['loggedin']) && ($_SESSION['loggedin']==true))
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pl">
+<html lang="en">
 
 <head>
 	<title>Settlers - Game</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
 	

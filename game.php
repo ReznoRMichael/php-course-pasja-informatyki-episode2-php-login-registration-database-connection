@@ -11,10 +11,11 @@
 ?>
 
 <!DOCTYPE HTML>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 <title>Settlers - web game</title>
 </head>
