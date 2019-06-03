@@ -147,6 +147,7 @@ if (isset($_POST['login']))
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="favicon.png">
+	<script src="cookiealert/cookiealert_1_2.js"></script><script>CookieAlert.init();</script>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
